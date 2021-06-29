@@ -1,210 +1,62 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet" type="text/css">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    
-    
-    <title>SISO</title>
-
-
-    <style>
-        .colsiso{
-            color: #fff;
-            background: rgba( 5, 49, 99,1 );
-            
-            
-            
-            
-            padding: 10em;
-            height:58em;
-            width: 40%;
-            
-        }
-
-        .collog{
-            color: #fff;
-            background-color: #d9d9d9;
-            padding: 10em;
-            width: 60%;
-            height: 58em;
-            
-            
-        }
-        .row{
-            padding: 0em;
-            margin: 0px;
-            height: 100%;
-            width: 120em;
-        }
-
-        .container{
-
-            padding: 0em;
-            margin: 0px;
-
-        }
-
-        .SISO{
-            font-family: 'Source Sans Pro', sans-serif;
-            font-size: 8em;
-            margin-top: 0em;
-            padding-top: 2em;
-            padding-left: -4em;
-            padding-right: 2em;
-        }
-        .imgsiso{
-            padding: 4em;
-            margin-left: 8em;
-            margin-top: -65%;
-            
-        }
-        .usuario{
-            margin-left: 25%;
-            padding: 3em;
-            height: 240px;
-            width: 240px;
-            display: flex; justify-content: center;
-
-        }
-        .box{
-
-            align-items: centers;
-
-            height: 38em;
-            width: 30em;
-            margin-left: 10em;
-            border-radius: 79px;
-            background: linear-gradient(225deg, #e8e8e8, #c3c3c3);
-            box-shadow:  -28px 28px 56px #a7a7a7,
-            28px -28px 56px #ffffff;
-        }
-        .forma1{
-            margin-left: 12%;
-            margin-top: -3%;
-            padding-top: 0%;
-            padding-left: 2%;
-            padding-right: -10%;
-            height: 2em;
-            width: 70%;
-        }
-        .forma2{
-            
-            margin-left: 12%;
-            margin-top: 15%;
-            padding-top: 0%;
-            padding-left: 2%;
-            padding-right: -10%;
-            height: 2em;
-            width: 70%;
-        }
-        .boton{
-            height: 2em;
-            width: 30%;
-            margin-left: 33%;
-            margin-top: 0%;
-            background-color: #039576;
-            border-radius: 20px;
-        }
-        .btnl{
-            margin-top: -5px;
-        }
-        .log{
-            margin: -10% -20% 0 4.5em;
-            font-family: 'Roboto', sans-serif;
-            font-size: 25px;
-            color:#053163;
-
-        }
-
-
-    </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap"rel="stylesheet">
 
 
 
+  <title>SISO</title>
+</head>
+<body>
+
+  <div class="contenedor">
+
+    <div class="seccion-siso">
 
 
+      
+      <div class="imagecontenedor">
 
-  </head>
-  <body>
+        <img src="images/sisilogo.svg" class="imgsiso"   alt="">
 
-    <div class="container">
-        <div class="row">
-            <div class="colsiso"> <h1 class="display-1 text-center SISO">SISO</h1>
-                <img src="images/sisioicon.svg" class="img-fluid imgsiso" alt="...">
-            
-            </div>
-            <div class="collog"><h1></h1>
 
-                <div class="box">
-                    <form>
-                        <div class="imagen">
-                            <img src="images/cliente.svg" class="img-fluid usuario" alt="">
-                        </div>
-                        <div class="form-group forma1">
-                          <label for="exampleInputEmail1 label1"><p class="log">Usuario</p></label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                          
-                        </div>
-                        <div class="form-group forma2">
-                          <label for="exampleInputPassword1 label1"><p class="log">Contraseña</p></label>
-                          <input type="password" class="form-control" id="exampleInputPassword1">
-                        </div>
-                        <br>
-                        <br>
-                        <br>
-                        <button type="submit" class="btn btn-primary btn-lg boton"><p class="btnl">Iniciar</p></button>
-                      </form>
-                </div>
-            
-            
-            </div>
+      </div> 
+    </div>
+
+    <div class="seccion-login">
+
+      <div class="cajalogin">
+
+        <div class="contenidolog">
+
+          <form action="">
+            <img src="images/cliente.svg" class="imgcl" alt="">
+            <p class="tex">Usuario</p>
+            <br>
+            <input type="text" name="usuario" placeholder="ingrse su usuario...">
+            <br>
+            <br>
+            <p class="tex-2">Contraseña</p>
+            <br>
+            <input type="password" name="contraseña" placeholder="ingrese su contraseña....">
+            <br>
+            <button type="button" class="btninic" id="btnInicio" onclick="enviardatos()"><p>Iniciar</p></button>
+  
+          </form>
         </div>
+
       </div>
-    
+    </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
-    -->
-  </body>
+  </div>
+  
+</body>
 </html>
