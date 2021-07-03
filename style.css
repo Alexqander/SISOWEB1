@@ -1,3 +1,16 @@
+:root{
+    --azulSiso: #2E7BE7;
+    --verdeAgua: #04B8A6;
+    --azulClaro: #B4EAF5;
+    --gris:#F0F0F0;
+    --verdeBrillante:#47EF9E;
+
+    --fuentePrincipal:  'Montserrat', sans-serif;
+    --fuenteSecundria:'Courier New', Courier, monospace;
+}
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -14,23 +27,22 @@ body{
 
 
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, auto);
-    grid-gap: 20px;
+    grid-template-rows:(1 auto);
+    
 
-    grid-template-areas: "seccion-siso seccion-siso seccion-login seccion-login"
-                         "seccion-siso seccion-siso seccion-login seccion-login";
+    grid-template-areas: "seccion-siso seccion-siso seccion-login seccion-login";
 }
 
 .contenedor > div,
 .contenedor .seccion-siso,
 .contenedor .seccion-login {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: var(--fuenteSecundria);
 
 }
 
 .contenedor .seccion-siso {
 
-    background: #2E7BE7;
+    background: var(--azulSiso);
     grid-area: seccion-siso;
     height: 100%;
     width: 100%;
@@ -105,7 +117,7 @@ body{
 .tex{
     width: 92px;
     height: 29px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--fuentePrincipal);
     font-weight: normal;
     font-size: 24px;
     line-height: 29px;
@@ -132,25 +144,55 @@ form input[type="password"]{
     border: none;
     display:inline-block;
     padding:5px 10px;
+    
 }
 
-.btninic{
-    width: 115px;
-    height: 32px;
+.btninic {
+    
     background: #039576;
     border-radius: 20px;
     border: none;
-    margin-top: 20px;
-    margin-left: 80px;
+    margin-left: 67px;
     color:#FFFFFF;
+    padding: 10px 45px  ;
+    font-family: var(--fuentePrincipal);
+    font-weight: normal;
+    text-decoration: none;
+    
+}
+
+.btninic:hover{
+
+    background:#2E7BE7;
+    
 }
 
 @media  (max-width: 978px) {
 
     .contenedor{
-        grid-template-areas: "seccion-login seccion-login seccion-login seccion-login"
-                             "seccion-siso seccion-siso seccion-siso seccion-siso";
+        width: 100%;
+        max-width: 812px;
+        display: grid;
+        grid-template-columns: 1 auto;
+        
+        grid-template-areas: "seccion-login seccion-login seccion-login seccion-login";
     }
+
+    .imagecontenedor{
+        display: none;
+    }
+
+    .contenedor .seccion-login {
+        background: #FFFFFF;
+        grid-area: seccion-login;
+        height: 100%;
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+    }
+
+    
     
 }
 
