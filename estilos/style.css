@@ -63,7 +63,7 @@ body{
 
 .imgsiso{
     
-    width: 100%;
+    width: 60%;
     height: auto;   
     
 }
@@ -136,7 +136,7 @@ body{
     margin-left: 68px;
 }
 
-form input[type="text"],
+form input[type="email"],
 form input[type="password"]{
     width: 264px;
     height: 32px;
@@ -144,6 +144,7 @@ form input[type="password"]{
     border: none;
     display:inline-block;
     padding:5px 10px;
+    font-family: var(--fuenteSecundria);
     
 }
 

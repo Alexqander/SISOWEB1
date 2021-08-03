@@ -5,11 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link href="style.css" rel="stylesheet" type="text/css">
+  <link href="estilos/style.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/BOOSTRAP5/css/bootstrap.min.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap"rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap"rel="stylesheet">
 
 
 
@@ -40,14 +41,15 @@
           <form action="">
             <img src="images/cliente.svg" class="imgcl" alt="">
             <p class="tex">Usuario</p>
-            <br>
-            <input type="text" name="usuario" placeholder="ingrse su usuario...">
+            
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              
             <br>
             <br>
             <p class="tex-2">Contraseña</p>
-            <br>
-            <input type="password" name="contraseña" placeholder="ingrese su contraseña....">
-            <br>
+            
+            <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+            
             <br>
             <br>
               <a href="" class="btninic" id="btnInicio"  onclick="enviardatos()" >Iniciar</a>
@@ -59,5 +61,7 @@
 
   </div>
   
+  <script src="/BOOSTRAP5/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
