@@ -1,67 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link href="estilos/style.css" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="/BOOSTRAP5/css/bootstrap.min.css">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap"rel="stylesheet">
-
-
-
-  <title>SISO</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/BOOSTRAP5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/estilos/login.css">
+    <title>SISO LOGIN</title>
 </head>
 <body>
 
-  <div class="contenedor">
+    <div class="container-fluid p-0">
+        <div class="row g-0">
 
-    <div class="seccion-siso">
+            <!-- AQUI VA LA PARTE DEL LOGO  -->
 
+            <div class="col-xl-6 col-sm-12 caja-logo d-flex align-items-center" >
+                <div class="caja-img d-flex justify-content-center">
+                    <img src="/images/Logo-siso.png" alt="" class="img-siso"></div>
+            </div>
 
-      
-      <div class="imagecontenedor">
+            <!-- ----------------------------------- -->
 
-        <img src="images/sisilogo.svg" class="imgsiso"   alt="">
+            <!-- AQUI INICIA LA SECCION PARA EL LOGIN DEL USUARIO -->
 
+            <div class="col-xl-6 col-sm-12 caja-login d-flex align-items-center justify-content-center">
+                <div class="container-fluid contenedor-log">
 
-      </div> 
-    </div>
+                    <div class="row">
+                    </div>
+                    <div class="row head">
+                        <div class="col d-flex justify-content-center  contenedor-img">
+                            <img src="/images/usuario-login.png" alt="" class="img-usu">
+                        </div>
+                    </div>
+                    <div class="row body">
 
-    <div class="seccion-login">
+                        <div class="col d-flex justify-content-center">
 
-      <div class="cajalogin">
-
-        <div class="contenidolog">
-
-          <form action="">
-            <img src="images/cliente.svg" class="imgcl" alt="">
-            <p class="tex">Usuario</p>
-            
-              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-              
-            <br>
-            <br>
-            <p class="tex-2">Contraseña</p>
-            
-            <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
-            
-            <br>
-            <br>
-              <a href="" class="btninic" id="btnInicio"  onclick="enviardatos()" >Iniciar</a>
-          </form>
+                            <form class="" action="">
+                                <div class="in-usuario mt-2">
+                                    <div class="label d-flex justify-content-center">
+                                        <label for=""><h6>Usuario</h6></label>
+                                    </div>
+                                    <input class="form-control ingrese" type="text" placeholder="ingrese su correo">
+                                </div>
+                                <div class="in-contraseña mt-2">
+                                    <div class="label d-flex justify-content-center">
+                                        <label for=""><h6>Contraseña</h6></label>
+                                    </div>
+                                    <input class="form-control ingrese" type="password" placeholder="ingrese su contraseña">
+                                </div>
+                                <div class="cajabtn col d-flex justify-content-center">
+                                    <button class="btn btn-iniciar btn-primary" type="submit" >Iniciar</button>
+                                </div>
+                            </form>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-      </div>
     </div>
-
-  </div>
-  
-  <script src="/BOOSTRAP5/js/bootstrap.bundle.min.js"></script>
-
+    
+    <script src="/BOOSTRAP5/js/bootstrap.min.js"></script>
 </body>
 </html>
