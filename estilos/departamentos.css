@@ -24,8 +24,8 @@
     border: none;
     border-radius: 20px;
     height: 180px;
-    background: rgba( 110, 105, 105, 0.20 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    background: rgba(228, 219, 219, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(104, 105, 126, 0.37);
     backdrop-filter: blur( 15.5px );
     -webkit-backdrop-filter: blur( 14.5px );
     border-radius: 15px;
@@ -35,7 +35,8 @@
 }
 
 .card:hover{
-    background: var(--gris);
+    transition: 0.7s;
+    background: var(--azulSiso);
     color:var(--azulSiso);
 }
 
@@ -45,7 +46,7 @@ a{
 }
 
 .pie{
-    background: var(--azulClaro);
+    background: var(--grisAdmin);
     border-radius: 15px;
 }
 .titulo{
@@ -107,3 +108,11 @@ a{
 
 
 /* ELEMENTOS DEL DOCUMENTO VISTA DEPARTAMENTOS */
+.imagen-u{
+    width: auto;
+    height: auto;
+}
+.usd{
+    width: 10%;
+    height:auto;
+}

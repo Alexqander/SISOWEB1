@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/BOOSTRAP5/css/bootstrap.min.css">
     <link rel="stylesheet" href="/estilos/menus.css">
     <link rel="stylesheet" href="/estilos/formularios.css">
+    <link rel="stylesheet" href="/estilos/modal.css">
 
     <title>Nuevo Usuario</title>
 </head>
@@ -164,12 +165,6 @@
 
                 </nav>
 
-                <footer>
-                    <nav>
-
-                    </nav>
-                </footer>
-
                 
 
             </aside>
@@ -197,34 +192,82 @@
                                         </div>
                                         
                                         <div class="col-6 d-flex justify-content-center">
-                                            <div class="formulario">
+                                            <div class="formulario-usuario">
                                                 <div class="body-form d-flex justify-content-center p-5">
-                                                    <form action="/servletEmpleados">
-                                                        <div class="mb-3">
-                                                            <label for="" class="form-label">Id Empleado</label>
-                                                            <input type="text" class="form-control in-c" placeholder="Ingrese el folio del documento">
+                                                    <form action="">
+                                                        <div class="row">
+                                                            <div class="col-6 mb-3">
+                                                                <label for="" class="form-label">Id Empleado</label>
+                                                                <input type="text" class="form-control in-c" placeholder="Ingrese el folio del documento">
+                                                            </div>
+                                                            <div class="col-6 mb-3">
+                                                                <label for="" class="form-label">Nombre</label>
+                                                                <input type="text" class="form-control in-c" placeholder="Ingrese el asunto">
+                                                            </div>
                                                         </div>
-                                                        <div class="mb-3">
-                                                            <label for="" class="form-label">Nombre </label>
-                                                            <select class="form-select in-c" aria-label="Default select example">
-                                                                <option selected>Seleccionar</option>
-                                                                <option value="1">Ventas</option>
-                                                                <option value="2">Contabilidad</option>
-                                                                <option value="3">Recursos Humanos</option>
-                                                              </select>
+                                                        <div class="row">
+                                                            <div class="col-6 mb-3">
+                                                                <label for="" class="form-label">Apellido Paterno</label>
+                                                                <input type="text" class="form-control in-c" placeholder="Ingrese el asunto">
+                                                            </div>
+                                                            <div class="col-6 mb-3">
+                                                                <label for="" class="form-label">Apellido Materno</label>
+                                                                <input type="text" class="form-control in-c" placeholder="Ingrese el asunto">
+                                                            </div>
                                                         </div>
-                                                        <div class="mb-3">
-                                                            <label for="" class="form-label">Edificio</label>
-                                                            <input type="text" class="form-control in-c" placeholder="Ingrese el asunto">
+                                                        <div class="row">
+                                                            <div class="col-6 mb-3">
+                                                                <label for="" class="form-label">Correo</label>
+                                                                <input type="text" class="form-control in-c" placeholder="Ingrese el asunto">
+                                                            </div>
+                                                            <div class="col-6 mb-3">
+                                                                <label for="" class="form-label">Contraseña</label>
+                                                                <input type="password" class="form-control in-c" placeholder="Ingrese el asunto">
+                                                            </div>
                                                         </div>
-                                                        <div class="mb-3">
-                                                            <label for="formFileSm" class="form-label">Icono</label>
-                                                            <input class="form-control form-control-sm in-c" id="formFileSm" type="file">
-                                                          </div>
-                                                          <div class="boton d-flex justify-content-center">
-                                                              <button type="submit" class="btn btn-primary boton-enviar">Enviar</button>
-                                                          </div>
+                                                        <div class="row">
+                                                            <div class="col-6 mb-3">
+                                                                <label for="" class="form-label">Cargo </label>
+                                                                <select class="form-select in-c" aria-label="Default select example">
+                                                                    <option selected>Seleccionar</option>
+                                                                    <option value="1">Ventas</option>
+                                                                    <option value="2">Contabilidad</option>
+                                                                    <option value="3">Recursos Humanos</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col-6 mb-3">
+                                                                <label for="" class="form-label">Departamento </label>
+                                                                <select class="form-select in-c" aria-label="Default select example">
+                                                                    <option selected>Seleccionar</option>
+                                                                    <option value="1">Ventas</option>
+                                                                    <option value="2">Contabilidad</option>
+                                                                    <option value="3">Recursos Humanos</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    
+                                                        <div class="boton d-flex justify-content-center mt-5">
+                                                            <button type="button" type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                                Registrar
+                                                              </button> 
+                                                        </div>
                                                     </form>
+                                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog">
+                                                          <div class="modal-content cot">
+                                                            <div class="modal-header">
+                                                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div class="row d-flex justify-content-center">
+                                                                    <img src="/images/error.png" alt="" srcset="" class="img-modal">
+                                                                    <h5 class="modal-title tit" id="exampleModalLabel">Error al Registrar Usuario</h5>
+                                                                </div>                      
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                    </div>
+                                        
                                                 </div>
                                             </div>
                                         </div>
